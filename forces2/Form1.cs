@@ -35,17 +35,29 @@ namespace forces2
             double rad = a / 180.0 * Math.PI;
             return Math.Sin(rad);
         }
+        private double Asin(double a)
+        {
+            return Math.Asin(a) * 180.0 / Math.PI;
+        }
 
         private double cos(double a)
         {
             double rad = a / 180.0 * Math.PI;
             return Math.Cos(rad);
         }
+        private double Acos(double a)
+        {
+            return Math.Acos(a) * 180.0 / Math.PI;
+        }
 
         private double tan(double a)
         {
             double rad = a / 180.0 * Math.PI;
             return Math.Tan(rad);
+        }
+        private double Atan(double a)
+        {
+            return Math.Atan(a) * 180.0 / Math.PI;
         }
     }
 }
