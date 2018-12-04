@@ -16,5 +16,37 @@ namespace forces2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double a = double.Parse(textBox1.Text);
+                double ans = tan(a);
+                label1.Text = ans.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Enter a number");
+            }
+        }
+        private double sin(double a)
+        {
+            double rad = a / 180.0 * Math.PI;
+            return Math.Sin(rad);
+        }
+
+        private double cos(double a)
+        {
+            double rad = a / 180.0 * Math.PI;
+            return Math.Cos(rad);
+        }
+
+        private double tan(double a)
+        {
+            double rad = a / 180.0 * Math.PI;
+            return Math.Tan(rad);
+        }
     }
 }
+
