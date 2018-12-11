@@ -22,8 +22,8 @@ namespace forces2
             try
             {
                 double a = double.Parse(textBox1.Text);
-                double ans = tan(a);
-                label1.Text = ans.ToString();
+                double ans = sin(a);
+                label1.Text = "Answer =" + ans;
             }
             catch
             {
@@ -58,6 +58,16 @@ namespace forces2
         private double Atan(double a)
         {
             return Math.Atan(a) * 180.0 / Math.PI;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
