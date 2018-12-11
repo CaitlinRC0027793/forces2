@@ -21,9 +21,12 @@ namespace forces2
         {
             try
             {
-                double a = double.Parse(textBox1.Text);
-                double ans = sin(a);
-                label1.Text = "Answer =" + ans;
+                double f = double.Parse(textBox1.Text);
+                double a = double.Parse(textBox2.Text);
+                double fx = f * cos(a);
+                double fy = f * sin(a);
+                label1.Text = "Fx = " + fx + "N";
+                label2.Text = "Fy = " + fy + "N";
             }
             catch
             {
@@ -66,6 +69,11 @@ namespace forces2
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
